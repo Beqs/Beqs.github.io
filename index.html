@@ -15,7 +15,6 @@
         <img id="bulb3" class="bulbs" src="bulb-off.jpg" />
         <img id="bulb4" class="bulbs" src="bulb-off.jpg" />
         <img id="bulb5" class="bulbs" src="bulb-off.jpg" />
-        <img id="bulb6" class="bulbs" src="bulb-off.jpg" />
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -48,14 +47,9 @@
                     $("#bulb3").attr("src", "bulb-off.jpg")
                     index++;
                     break;
-                case 5:
+                default:
                     $("#bulb5").attr("src", "bulb-on.jpg")
                     $("#bulb4").attr("src", "bulb-off.jpg")
-                    index++;
-                    break;
-                default:
-                    $("#bulb6").attr("src", "bulb-on.jpg")
-                    $("#bulb5").attr("src", "bulb-off.jpg")
                     index = 1;
                     break;
             }
